@@ -1,0 +1,18 @@
+
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Jobs</h1>
+        <div class="jobs">
+            <div class="card" style="margin: 1rem; padding: 2rem;" *ngFor="let job of jobs">
+                <div class="class-body" >
+                    <h5 class="card-title">{{ job._source.title}}</h5>
+                    <h5>{{ job._source.tile}}</h5>
+                    <p >{{job._source.short_list_desc}}</p>
+                    <p >{{job._source.company}}</p>
+                    <p>{{job._source.location_name}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
