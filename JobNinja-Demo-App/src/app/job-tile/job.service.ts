@@ -1,13 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
-
-
 import { Observable } from 'rxjs';
-import { catchError } from 'rxjs/operators';
 
 import { Jobs } from './job-tile';
-//import { HttpErrorHandler, HandleError } from '../http-error-handler.service';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -25,7 +21,7 @@ export class JobsService {
     public http: HttpClient) {
   }
 
-  /** GET heroes from the server */
+  /** GET jobs from the server */
   getJobs(): Observable<Jobs[]> {
     return this.http.get<Jobs[]>(this.jobsUrl)
       .pipe();

@@ -6,6 +6,7 @@ export interface Jobs {
         title: { type: 'string' },
         short_list_desc: {type: 'number' },
         company: {type: 'string'},
-        location_name: {type: 'string'}
+        location_name: {type: 'string'},
+        list_image: {type: 'string'}
       },
     }
